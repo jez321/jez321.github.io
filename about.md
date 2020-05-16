@@ -4,15 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi, I'm Jeremy, a web developer (and sometimes UI/UX designer) living in Japan and currently working at [AutoScale](https://autoscale.jp).  
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Before AutoScale I worked as a developer at NEC Solution Innovators, and before that as an English teacher(!) at Nova. 
+A few more details about past work and projects can be found on my [homepage](https://jjohns.com).
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I have worked in Angular/Typescript but mainly work in React/Typescript now, primary developing the [SocialDog](https://social-dog.net/en) Twitter account management/automation app.
