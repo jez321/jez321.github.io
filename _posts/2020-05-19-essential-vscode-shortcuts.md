@@ -49,7 +49,7 @@ While as is standard `Ctrl+F` `⌘F` will all you to find some specific text wit
 
 Have you ever opened a file and then wanted to return to the file you were previously looking at but couldn't find an easy way to do it? The solution to this somewhat common issue is the go back / go forward shortcuts, allowing you to quickly navigate backward and forward through the files you had opened.
 
-### Open a new terminal
+<!-- ### Open a new terminal
 
 ### Show markdown preview
 
@@ -63,4 +63,6 @@ Have you ever opened a file and then wanted to return to the file you were previ
 
 ### Select all occurrences of current selection
 
-### Select all occurrences of current word
+### Select all occurrences of current word -->
+
+{% include share-buttons.html %}
