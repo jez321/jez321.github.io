@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Essential VSCode shorcuts'
-date: 2020-05-18 22:55:55 +0900
+date: 2020-05-19 23:59:30 +0900
 categories: ide vscode
 ---
 
