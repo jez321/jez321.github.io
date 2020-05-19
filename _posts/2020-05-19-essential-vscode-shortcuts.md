@@ -5,7 +5,7 @@ date: 2020-05-18 22:55:55 +0900
 categories: ide vscode
 ---
 
-[Visual Studio Code](https://code.visualstudio.com/) is one of the most popular IDE's for web development these days and as with any IDE, knowing a few simple keyboard shortcuts can lessen frustration and improve your efficiency greatly. Here are what I consider the essential keyboard shortcuts you should know.
+[Visual Studio Code](https://code.visualstudio.com/) is one of the most popular IDE's for web development these days and as with any IDE, knowing a few simple keyboard shortcuts can lessen frustration and improve your efficiency greatly. Here are what I consider the essential keyboard shortcuts you must know.
 
 ## The Basics
 
@@ -41,7 +41,7 @@ For block comments, highlight the block of text first, then enter the shortcut t
 
 `Shift+Ctrl+F` `⇧⌘F`
 
-While as is standard `Ctrl+F` `⌘F` will all you to find some specific text within the current file, this shortcut will open VSCode's powerful search panel, allowing you to search for text within any file in your entire project.
+While as is standard `Ctrl+F` `⌘F` will allow you to find some specific text within the current file, this shortcut will open VSCode's powerful search panel, allowing you to search for text within any file in your entire project.
 
 ### Go back / forward
 
@@ -49,20 +49,59 @@ While as is standard `Ctrl+F` `⌘F` will all you to find some specific text wit
 
 Have you ever opened a file and then wanted to return to the file you were previously looking at but couldn't find an easy way to do it? The solution to this somewhat common issue is the go back / go forward shortcuts, allowing you to quickly navigate backward and forward through the files you had opened.
 
-<!-- ### Open a new terminal
+### Show terminal
 
-### Show markdown preview
+`` Ctrl+` `` `` ⌃` ``
 
-## Getting a Little More Advanced
+The terminal in VSCode quite handy for running all kinds of commands such as git, starting up the development server and so on.
+This command will bring it up, ready for input.
 
 ### Split terminal
 
-### Navigate between split terminals
+`Shift+Ctrl+5` `⇧⌘F`
+
+You can never have too many terminals, this command will create another terminal side by side the existing one(s), displaying them in columns.
+I prefer this to having them as competely separate windows so I can see what's going on in all of them at once. The columns can make things a little cramped but 3 or 4 shouldn't really be a problem for general terminal duties on a decently wide screen.
+
+### Open markdown preview to the side
+
+`Ctrl+K V` `⌘K V`
+
+_Note: The space means press the first key combination, release it, and then press the second key._
+
+If you're writing documentation or even just a simple Readme file, you will very likely need to write in markdown.
+If this is the case and especially if you are still a relative beginner, being able to visually check the output of your .md in real time while you write is a huge help.
+
+![Markdown preview](/assets/2020-05-19-essential-vscode-shortcuts/markdown-preview.png)
+
+## Getting a Bit More Advanced With Multiple Cursors
+
+Multiple cursors is something many programmers don't use, but once you get used to them, you'll start to realize when you come across situations where they are useful and get nice boost to your coding efficiency.
+By placing multiple cursors throughout your code, you can perform the same modifications on multiple locations simultaneously, greatly cutting down on the time needed to perform repetitive edits.
 
 ### Insert cursor
 
+`Alt+Click` `⌥ + Click`
+
+The most basic incarnation, simply hold down `Alt` or `⌥` and click anywhere to create a new cursor there.
+
 ### Select all occurrences of current selection
 
-### Select all occurrences of current word -->
+`Ctrl+Shift+L` `⇧⌘L`
+
+Select a piece of text, then input this shortcut to also select all other pieces of matching text within the file.
+
+### Select all occurrences of current word
+
+`Ctrl+F2` `⌘F2`
+
+This shortcut allows you to simplely place your cursor somewhere on a word, and then select all identical words within the file.
+
+![Select all occurrences of current word](/assets/2020-05-19-essential-vscode-shortcuts/multiple-word.gif)
+
+## In Closing
+
+I hope you learnt a couple of new shortcuts and they help to make your coding more efficient and more importantly more enjoyable!
+Don't forget you can always input `Ctrl+K Ctrl+S` `⌘K ⌘S` to display the full list of available VSCode shortcuts as well.
 
 {% include share-buttons.html %}
