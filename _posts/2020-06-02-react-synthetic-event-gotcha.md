@@ -38,11 +38,11 @@ return {
 
 I came across this myself today in a form and it took a couple of minutes to realize what the issue was. For some reason I was getting an error that `e.target.name` and `e.target.checked` could not be found as `e.target` was `null`.
 
-The problem here is that for performance reasons, React does not pass click events, change events, and other user events directly to your event handlers, but rather wraps them, converting them to **Synthetic events**.
+The problem here is that for performance reasons, React does not pass onclick events, onchange events, and other user events directly to your event handlers, but rather wraps them, converting them to **Synthetic events**.
 
 Now while in most cases these synthetic events can be treated the same as raw events, React actually **reuses** them, setting their properties (including target) to **null** after the event handler has run. Now can you see the issue with the above code?
 
-Because the new state of formData depends on its previous state, we need to pass a function to the setFormData setter to ensure consistency. This function however is executed after the onClick event handler returns, by which point React has already set the `target` property of the synthetic event object to null. 
+Because the new state of formData depends on its previous state, we need to pass a function to the setFormData setter to ensure consistency. This function however is executed after the onClick event handler returns, by which point React has already set the `target` property of the synthetic event object to null.
 
 ## The Solution
 
