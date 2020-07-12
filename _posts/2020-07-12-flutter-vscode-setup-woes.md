@@ -5,7 +5,7 @@ date: 2020-07-11 23:49:30 +0900
 categories: flutter vscode
 ---
 
-While attempting to [set up flutter](https://flutter.dev/docs/get-started/install) for development, I came across a few issues which I'll briefly run through below, along with their solutions.
+While attempting to [set up flutter](https://flutter.dev/docs/get-started/install){:target="\_blank"} for development, I came across a few issues which I'll briefly run through below, along with their solutions.
 
 ## Setting the Android SDK path
 

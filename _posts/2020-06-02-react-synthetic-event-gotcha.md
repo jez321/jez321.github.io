@@ -60,6 +60,6 @@ setFormData((prevFormData) => {
 
 Easy to avoid once you know.
 
-For more information on synthetic events, checkout the relevant pages of the [React docs](https://reactjs.org/docs/events.html).
+For more information on synthetic events, checkout the relevant pages of the [React docs](https://reactjs.org/docs/events.html){:target="\_blank"}.
 
 {% include share-buttons.html %}

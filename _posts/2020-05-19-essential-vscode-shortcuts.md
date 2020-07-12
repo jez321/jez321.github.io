@@ -5,7 +5,7 @@ date: 2020-05-19 23:59:30 +0900
 categories: ide vscode
 ---
 
-[Visual Studio Code](https://code.visualstudio.com/) is one of the most popular IDE's for web development these days and as with any IDE, knowing a few simple keyboard shortcuts can lessen frustration and improve your efficiency greatly. Here are what I consider the essential keyboard shortcuts you must know.
+[Visual Studio Code](https://code.visualstudio.com/){:target="\_blank"} is one of the most popular IDE's for web development these days and as with any IDE, knowing a few simple keyboard shortcuts can lessen frustration and improve your efficiency greatly. Here are what I consider the essential keyboard shortcuts you must know.
 
 ## The Basics
 
