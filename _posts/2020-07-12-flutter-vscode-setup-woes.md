@@ -32,6 +32,7 @@ If you need to restore the default launch configuration, just copy the folloing 
 ```
 
 If you don't have a `.vscode/launch.json` you shouldn't have to worry as you should already have the default launch configuration. If you'd like to create a `launch.json` to be sure, you can do so by clicking the cog icon in the 'Run' tab of VSCode.
+
 ![Add launch configuration](/assets/2020-07-12-flutter-vscode-setup-woes/add-launch-configuration.png)
 
 {% include share-buttons.html %}
