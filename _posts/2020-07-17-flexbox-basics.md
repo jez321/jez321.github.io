@@ -68,10 +68,11 @@ Before we talk about alignment and justification, we need to discuss axes.
 Every flexbox layout has a main axis and a cross axis.
 The main axis is axis that runs along the flex-direction, and the cross axis is the axis perpendicular to it.
 
-|            | `flex-direction: row` | `flex-direction: column` |
-| ---------- | --------------------- | ------------------------ |
-| main axis  | horizontal            | vertical                 |
-| cross axis | vertical              | horizontal               |
+|            | `flex-direction: row`                                                 | `flex-direction: column`                                                    |
+| ---------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Main axis  | horizontal                                                            | vertical                                                                    |
+| Cross axis | vertical                                                              | horizontal                                                                  |
+|            | ![flex-direction: row](/assets/2020-07-17-flexbox-basics/flexrow.png) | ![flex-direction: column](/assets/2020-07-17-flexbox-basics/flexcolumn.png) |
 
 Whenever you see the word 'justify', think main axis.
 So for a row flexbox layout, to make all the elements bunch up to the left or right, you would use justify-content.
