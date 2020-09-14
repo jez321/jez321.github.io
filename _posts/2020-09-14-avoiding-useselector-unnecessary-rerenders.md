@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Avoiding useSelector unnecessary rerenders"
-date: 2020-09-14 23:26:00 +0900
+date: 2020-09-14 14:26:00 +0900
 categories: react redux performance
 ---
 
