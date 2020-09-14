@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'React SyntheticEvent gotcha'
+title: "React SyntheticEvent gotcha"
 date: 2020-06-02 00:26:00 +0900
 categories: react events
 ---
@@ -60,6 +60,6 @@ setFormData((prevFormData) => {
 
 Easy to avoid once you know.
 
-For more information on synthetic events, checkout the relevant pages of the [React docs](https://reactjs.org/docs/events.html){:target="\_blank"}.
+For more information on synthetic events, check out the relevant pages of the [React docs](https://reactjs.org/docs/events.html){:target="\_blank"}.
 
 {% include share-buttons.html %}
