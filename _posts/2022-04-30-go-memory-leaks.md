@@ -7,16 +7,15 @@ categories: go
 
 While thanks to Go's garbage collector much of the burden of memory management is transferred from the developer to the runtime itself, there still remain some situations where memory leaks can occur, some of the most common of which are outlined here.
 
-#### Unterminated goroutines
+### Unterminated goroutines
 
 ```go
 func leak() {
-    ch := make(chan int)
-
-    go func() {
-        <-ch
-		    fmt.Println("Goroutine finish")
-    }()
+  ch := make(chan int)
+  go func() {
+    <-ch
+    fmt.Println("Goroutine finish")
+  }()
 }
 ```
 
@@ -27,17 +26,17 @@ The function returns before any writes to `ch` that would unblock the goroutine,
 
 As [Dave Cheney](https://dave.cheney.net/2016/12/22/never-start-a-goroutine-without-knowing-how-it-will-stop){:target="\_blank"} puts it, never start a goroutine without knowing how it will stop. This should also be clear to anyone reading the code at a later date too, through writing readable code, and if necessary, appropriate comments.
 
-#### Ever-growing caches
+### Ever-growing caches
 
 ```go
 var cache = map[string]string{}
 
 func get(key string) string {
-	if v, ok := cache[key]; ok {
-		return v
-	}
-	cache[key] = "value" // get value from db etc.
-	return cache[key]
+  if v, ok := cache[key]; ok {
+    return v
+  }
+  cache[key] = "value" // get value from db etc.
+  return cache[key]
 }
 ```
 
@@ -45,7 +44,7 @@ func get(key string) string {
 
 While not exactly a memory leak, and not specific to Go, not having any mechanism for removing values from caches can be another source of out of control memory growth. Resources not being unlimited, at some point you will need to remove values from your cache, whether it be by time, when a particular event occurs, or something else.
 
-#### Not closing resources
+### Not closing resources
 
 ```go
 resp, err := http.Get("https://example.com")
