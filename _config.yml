@@ -17,10 +17,10 @@ title: Jeremy Johns
 author: Contact
 description: >- # this means to ignore newlines until "baseurl:"
   Random web development and programming thoughts and findings.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://blog.jjohns.com/' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thejez
-github_username:  jez321
+github_username: jez321
 google_analytics: UA-166799399-1
 
 # Build settings
@@ -29,7 +29,6 @@ future: false
 theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
