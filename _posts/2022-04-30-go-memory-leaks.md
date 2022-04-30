@@ -5,8 +5,6 @@ date: 2022-04-30 08:49:30 +0900
 categories: go
 ---
 
-### Common Go memory leaks
-
 While thanks to Go's garbage collector much of the burden of memory management is transferred from the developer to the runtime itself, there still remain some situations where memory leaks can occur, some of the most common of which are outlined here.
 
 #### Unterminated goroutines
