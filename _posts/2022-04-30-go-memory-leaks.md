@@ -13,13 +13,14 @@ While thanks to Go's garbage collector much of the burden of memory management i
 func leak() {
   ch := make(chan int)
   go func() {
+    fmt.Println("goroutine started")
     <-ch
-    fmt.Println("Goroutine finish")
+    fmt.Println("goroutine finished") // never reached
   }()
 }
 ```
 
-[Go Playground](https://go.dev/play/p/4Q5W7FKsocH){:target="\_blank"}
+[Go Playground](https://go.dev/play/p/pASciZgaT8N){:target="\_blank"}
 
 In this most basic example a goroutine is created and sits waiting for data on channel `ch`.
 The function returns before any writes to `ch` that would unblock the goroutine, and so it continues waiting forever, never releasing its resources.
@@ -44,7 +45,7 @@ func get(key string) string {
 
 While not exactly a memory leak, and not specific to Go, not having any mechanism for removing values from caches can be another source of out of control memory growth. Resources not being unlimited, at some point you will need to remove values from your cache, whether it be by time, when a particular event occurs, or something else.
 
-### Not closing resources
+### Unclosed resources
 
 ```go
 resp, err := http.Get("https://example.com")
