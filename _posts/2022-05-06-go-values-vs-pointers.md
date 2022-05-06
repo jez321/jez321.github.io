@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'When to use values vs pointers in Go'
-date: 2022-05-07 08:49:30 +0900
+date: 2022-05-06 08:49:30 +0900
 categories: go
 ---
 
